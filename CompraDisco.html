@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>          
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compra do Disco</title> <!--filtro-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+
+
+    <style type="text/css">
+      
+  
+    .conteudo{
+      margin: 8vw;
+    }
+
+    .modelos{
+      background-color: rgba(255, 221, 233, 0.70);
+      border-radius: 50px;
+      padding: 5%;
+      margin-left: 20%;
+      margin-right: 20%;
+
+    }
+
+    .modelotitulo{
+      font-family: 'Assistant';
+      font-weight: 800;
+      font-size: 2vw;
+      color: #3E3E67;
+    }
+
+    .descubra{
+      font-family: 'Assistant';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.2vw;
+  
+      text-decoration-line: underline;
+
+      color: #8F4C6E;
+    }
+
+    .introducao{
+      border: 8px dashed #D95F76;
+      border-radius: 27px;
+      margin-top: 10vh;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 2%;
+    }
+
+    .conhecer{
+      background: #8F4C6E;
+      border-radius: 10px;
+      padding: 2%;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: center;
+
+      font-family: 'Roboto Slab';
+      font-weight: 500;
+      font-size: 1.5vw;
+
+      color: #FFFFFF;
+
+    }
+
+    .conhecertexto{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-family: 'Roboto Slab';
+      font-weight: 400;
+      font-size: 1.2vw;
+
+      color: #3E3E67;
+
+    }
+
+
+    .flex-containerI{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80vw;
+    height: 100vh;
+    padding: 5%;
+     
+    }
+
+
+  
+
+    .PI{
+      font-family: 'Assistant';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 1.5vw;
+
+      color: #FFFFFF;
+    }
+
+
+
+    .PItitulo{
+       padding: 3%;
+       width: 50%;
+       height:10% ;
+      background-color: #3E3E67;
+
+       
+
+
+    }
+  
+    .PIsubtitulo{
+      text-align: center;
+      padding: 15%;
+       width: 50%;
+       height: 82%;
+      background-color: #3E3E67;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+
+      
+
+    }
+
+
+    .Passos{
+      background-color: #FFF2E6;
+      padding: 2%;
+      width:50%;
+      height: 70%;
+    }
+
+    .itemI:nth-child(2n+1) { order: 1; }
+    .itemI:nth-child(2n+2) { order: 2; }
+
+
+    .flex-containerI::before,
+    .flex-containerI::after {
+        content: "";
+        flex-basis: 100%;
+        width: 0;
+       order: 2;
+    }
+
+
+    .escolha{
+
+     background: rgba(255, 221, 233, 0.50);
+      padding: 2%;
+      border-radius: 30px;
+      margin-left: 10%;
+      margin-right: 10%;
+
+    }
+
+    .escolhaTitulo{
+      background-color: #8F4C6E;
+      border-radius: 5px;
+      padding: 2%;
+      text-align: center;
+
+      font-family: 'Assistant';
+      font-weight: 800;
+      font-size: 1.5vw;
+      color: #FFDDE9;
+
+    }
+
+    .escolhaSubTitulo{
+      background-color: #3E3E67;
+      font-family: 'Roboto Slab';
+      font-weight: 700;
+      font-size: 1.2vw;
+      padding: 2%;
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+
+      color: #FFDDE9;
+
+    }
+
+
+    .volume{
+      background-color: #FFF2E6;
+      border: 2px solid #3E3E67;
+      border-radius: 50px;
+      height: 60vh;
+      margin: 2vh;
+      padding: 5vh;
+    }
+
+    .qntdevolume{
+      font-family: 'Roboto Slab';
+      font-weight: 500;
+      font-size: 1.6vw;
+      color: #2A2752;
+
+    }
+
+
+
+    .flex-containerII{
+    display: flex;
+    flex-flow: column wrap;
+  
+    width: 60vw;
+    height: 70vh;
+    padding: 5%;
+     
+    }
+
+    .itemII:nth-child(2n+1) { order: 1; }
+    .itemII:nth-child(2n+2) { order: 2; }
+
+
+    .flex-containerII::before,
+    .flex-containerII::after {
+        content: "";
+        flex-basis: 100%;
+        width: 0;
+       order: 2;
+    }
+
+
+
+
+    .flexibilidadeDisco{
+      background-color: #8F4C6E;
+
+      height: 50vh;
+      width: 20vw;
+      text-align: center;
+      padding: 5%;
+      padding-top: 15%;
+
+      
+
+      font-family: 'Roboto Slab';
+      font-weight: 900;
+      font-size: 1.5vw;
+
+      color: #FFFFFF;
+    }
+
+    
+
+      .flexibilidadetexto{
+        width: 50%;
+        padding: 5%;
+      }
+
+
+
+    .list{
+       font-family: 'Roboto Slab';
+      font-weight: 300;
+      font-size: 1.3vw;
+   
+      color: #3E3E67;    
+    }
+
+    .pagination{
+      float: right;
+
+    }
+
+    .rodape {     
+          
+        position: absolute;     
+        top: 3200px;
+        padding: 30px;
+        height: 200px;
+        background-color: #3E3E67;
+        }   
+    
+    
+
+    </style>
+    <!--link menu -->
+    <link rel="stylesheet" type="text/css" href="..\menu.css">
+    
+  </head>
+  
+  <body>
+
+
+    <!--Inicio dos menus -->
+  <nav class="NavePrincipal" style="z-index: 1;">
+    
+    <a href="..\Tela home.html" class="FluaLeve1"><img  src="..\ImagensProdutosMenu\home.png" width="125px" height="36.5px"></a>
+    
+    <div class="divRight">
+      
+    <ul>
+      <li class="Produtos">
+      <a href="..\Tela Produto.html" class="LinkLoja">Blog</a>
+      <ul class="ViewProdutos">
+      <li class="LinhaFlex">
+
+
+        <div class="card cadcad">
+        <div class="divSupCard">
+        <div class="Img-Title"> 
+        <h5 class="card-title divSupTitle">Coletor menstrual</h5>
+          <img src="..\ImagensProdutosMenu\coletorMenstrual.png" class="card-img-top ImgCard " alt="...">
+        </div>  
+          <p class="divSupText">reutilizavel</p>
+        </div>
+
+        
+            <div class="cardbody">
+              
+              <ul class="Blocktext">
+             <li><p class="cardtext">Uso</p></li>
+             <li><p class="cardtext">Higienização</p></li>
+             <li><p class="cardtext">O que você precisa saber antes de comprar</p></li>
+             <li><p class="cardtext">Descubra qual modelo melhor se adapta ao seu corpo</p></li> 
+             </ul>
+          </div>
+        </div>
+
+
+          <div class="card cadcad">
+        <div class="divSupCard cc">
+        <div class="Img-Title"> 
+        <h5 class="card-title divSupTitle">Disco menstrual</h5>
+          <img src="..\ImagensProdutosMenu\discoMenstrual.png" class="card-img-top ImgCard disco" alt="...">
+        </div>  
+          <p class="divSupText">reutilizavel</p>
+        </div>
+            <div class="cardbody">
+             
+              <ul class="Blocktext">
+                <li><p class="cardtext">Uso</li>
+                <li><p class="cardtext">Higienização</li>
+                <li><p class="cardtext">O que você precisa saber antes de comprar</li>
+                <li><p class="cardtext">Descubra qual modelo melhor se adapta ao seu corpo</li>    
+            
+            </ul>
+          </div>
+        </div>
+
+        <div class="card cadcad">
+        <div class="divSupCard">
+        <div class="Img-Title"> 
+        <h5 class="card-title divSupTitle">Calcinha absorvente </h5>
+          <img src="..\ImagensProdutosMenu\calcinha.png"  class="card-img-top ImgCard" alt="...">
+        </div>  
+          <p class="divSupText">reutilizavel</p>
+        </div>
+            <div class="cardbody">
+             
+              <ul class="Blocktext">
+                <li><p class="cardtext">Camadas</p></li>
+                <li><p class="cardtext">Durabilidade</p></li>
+                <li><p class="cardtext">Quantas devo ter?</p></li>
+                <li><p class="cardtext">Quando devo trocar?</p></li>
+                <li><p class="cardtext">Lavagem</p></li>
+                <li><p class="cardtext">Descubra qual modelo melhor se adapta ao seu corpo</p></li>
+                </ul>  
+          </div>
+        </div>
+
+        <div class="card cadcad">
+        <div class="divSupCard">
+        <div class="Img-Title"> 
+        <h5 class="card-title divSupTitle">Absorvente descartavel</h5>
+          <img src="..\ImagensProdutosMenu\absorventeBiodegradavel.png"  class="card-img-top ImgCard" alt="...">
+        </div>  
+          <p class="divSupText">reutilizavel</p>
+        </div>
+            <div class="cardbody">
+              
+           <ul class="Blocktext">
+            <li><p class="cardtext">Saiba mais</p></li>
+            <li><p class="cardtext">Descubra qual modelo melhor se adapta ao seu corpo</p> </li> 
+            </ul>
+          </div>
+        </div>
+
+        <div class="card cadcad">
+        <div class="divSupCard">
+        <div class="Img-Title"> 
+        <h5 class="card-title divSupTitle">Absorvente de pano </h5>
+          <img src="..\ImagensProdutosMenu\absorventePano.png" class="card-img-top ImgCard" alt="...">
+        </div>  
+          <p class="divSupText">reutilizavel</p>
+        </div>
+          <div class="cardbody">
+              
+              <ul class="Blocktext">
+              <li><p class="cardtext">Sua saúde</p></li>
+              <li><p class="cardtext">Camadas</p></li>
+              <li><p class="cardtext">Durabilidade</p></li>
+              <li><p class="cardtext">Quantas devo ter?</p></li>
+              <li><p class="cardtext">Quando devo trocar?</p></li>
+              <li><p class="cardtext">Higiene e odor</p></li>
+              <li><p class="cardtext">Lavagem</p></li>
+              <li><p class="cardtext">Descubra qual modelo melhor se adapta ao seu corpo content.</p> </li> 
+              </ul>
+          </div>
+        </div>
+
+
+      </li>
+      </ul>
+      </li> 
+    </ul> 
+    </div>
+        
+
+
+<div class="accordion ad" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    
+      <button class="accordion-button collapsed botaoHamb" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        <img src="..\ImagensProdutosMenu\Menu.png" width="30px" height="30px">
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse add" aria-labelledby="panelsStayOpen-headingTwo ">
+      <div class="accordion-body acord">
+        <a href="..\Tela Produto.html" class="LinkLoja">Produto</a>
+        <span class="Login">
+        <a href="LinkLoja "><img class="LinkLoginHamb" src="..\ImagensProdutosMenu\login.png" width="81px" height="19px"></a>
+        </span>
+        <a href="" class="LinkLoja  LinkLojanHamb">Loja</a>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div class="divLeft">
+      <ul class="ItemLeft">
+        
+
+        <li class="MajorLoja">
+          <span class="Login">
+          <a href="..\Teladelogin.html"><img class="" src="..\ImagensProdutosMenu\login.png" width="81px" height="19px"></a>
+          </span>
+
+        <ul class="LoginP">
+            <li class="conteudoLogin">
+
+                <b class="tituloLogin">Que tal sua marca ser vendida pela</b>
+
+                <img src="..\ImagensProdutosMenu\FluaLeve.png" class="ImgLogin">
+                <b class="Inter">?</b>
+                <p style="color:white;"> Para que isso seja possivel se torne um de nossos fornecedores e faça parte dessa causa!</p>
+
+                <a class="botaoFor" href="..\Cadastrofonecedor2.html">Seja nosso fornecedor</a>
+
+                <p style="color:white; text-align: center;">Já é nosso fornecedor?</p>
+
+                <a href="" class="botaoVend">central de vendas</a>
+
+
+
+            </li>
+          </ul>
+                  
+        </li>
+        
+
+
+
+
+
+        <li class="MajorLoja">
+            <a href="" class="LinkLoja">Loja</a>
+          <ul class="Loja">
+            <li class="conteudoLoja">
+              
+              <img src="..\ImagensProdutosMenu\logoCarrinho.png" width="64px" height="72px" class="ImgCarrinho">
+
+              <b class=" TituloLoja"> SEU CARRINHO</b>
+
+              <img src="..\ImagensProdutosMenu\desenhoDoletor.png" width="170px" height="170px" class="ImgCarrinho desCole">
+              <div class="LojaText">
+              <p class="Font"><b>Korui coletor menstrual leve</b></p>
+              <p class="Font"><b>Cor:</b> rosa  </p>
+              <p class="Font"><b>Tamanho:</b> A</p>
+              </div>
+
+              <div class="DivQuantidade">
+              <a href="#" class="Maior">+</a>
+              <p class="num"><b>1</b></p>
+              <a href="#" class="Menor">-</a>
+              </div>  
+              <a href="#" class="btn btn-primary botaoLoja">Comprar</a>
+
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+
+    </div>
+
+  </nav>
+
+
+
+
+
+
+
+
+  <div class="Menu2">
+  <ul class="menu2Lista">
+        
+        <li class="lista1">
+            <a>Coletor menstrual</a>
+            <ul class="lista">
+              <li class="li"><a class="LinkLista" href="">Coletor para fluxo leve</a></li>
+            <li class="li"><a  class="LinkLista" href="">Coletor para fluxo moderado</a></li>
+            <li class="li"><a class="LinkLista" href="">Coletor para fluxo intenso</a> </li>
+            </ul>
+          </li>
+
+        
+
+        <li class="lista1">
+          <a href="Disco-filtro.html" class="LinkM2">Disco menstrual</a>
+          <ul class="lista">
+            <li class="li"><a  class="LinkLista" href="">Disco para fluxo leve</a></li>
+            <li class="li"><a  class="LinkLista" href="">Disco para fluxo moderado</a></li>
+            <li class="li"><a class="LinkLista"  href="">Disco para fluxo intenso</a> </li>
+          </ul>
+        </li>
+
+
+
+        <li class="lista1">
+          <a href="Calcinha-filtro.html"  class="LinkM2">Calcinha absorvente</a>
+          <ul class="lista">
+            <li class="li"><a  class="LinkLista" href="">Calcinha para fluxo leve</a></li>
+            <li class="li"><a  class="LinkLista" href="">Calcinha para fluxo moderado</a></li>
+            <li class="li"><a class="LinkLista" href="">Calcinha para fluxo intenso</a> </li>
+          </ul>
+        </li>
+
+
+
+        <li class="lista1">
+          <a href="AbsorventedePano-filtro.html"  class="LinkM2">Absorvente descartavel</a>
+          <ul class="lista">
+            <li class="li"><a class="LinkLista" href="">Protetor de calcinha sem abas</a></li>
+            <li class="li"><a class="LinkLista" href="">Protetor de calcinha com abas</a></li>
+            <li class="li"><a class="LinkLista" href="">Absorvente fluxo leve</a></li>
+            <li class="li"><a class="LinkLista" href="">Absorvente fluxo moderado</a> </li> 
+            <li class="li"><a  class="LinkLista" href="">Absorvente fluxo intenso</a></li>
+            <li class="li"><a class="LinkLista" href="">Absorvente fluxo muito intenso</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="lista1">
+          <a href="Absorventebiodegradavel-filtro.html"  class="LinkM2">Absorvente reutilizavel</a>
+          <ul class="lista tt">
+            <li class="li"><a class="LinkLista" href="">Protetor de calcinha sem abas</a></li>
+            <li class="li"><a class="LinkLista" href="">Protetor de calcinha com abas</a></li>
+            <li class="li"><a class="LinkLista" href="">Absorvente fluxo leve</a></li>
+            <li class="li"><a class="LinkLista" href="">Absorvente fluxo moderado</a> </li>
+            <li class="li"><a class="LinkLista" href="">Absorvente fluxo intenso</a></li> 
+            <li class="li"><a class="LinkLista" href="">Absorvente fluxo muito intenso</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="lista1">
+          <a>Acessórios</a>
+          <ul class="ut">
+            <li class="li"><a class="LinkLista" href="">Higienizador para acessório menstruais</a></li>
+            <li class=" li"><a class="LinkLista" href="">Bolsa impermeavel</a></li>
+            <li class="li"><a class="LinkLista" href="">Copo esterilizador</a></li>
+            <li class="li"><a class="LinkLista" href="">Panela esterilizadora</a></li>
+          </ul>
+        </li>
+  </ul>
+</div>
+<!-- Fim dos menus -->
+<br>
+
+ <!--inicio do conteúdo-->
+
+<div class="conteudo">
+
+  <div class="modelos" >
+    <p class="modelotitulo">Os diversos modelos de discos menstruais reutilizaveis</p>
+    <p class="descubra">Descubra o que melhor se adapta ao seu corpo</p>
+  </div>
+
+  <div class="introducao">
+      <div class="conhecer">Conhecer o seu corpo é fundamental</div>
+      <p class="conhecertexto">Se quiser começar a usá-los, você vai precisar entrar em contato com a própria região intima e ter uma noção melhor de como funciona a sua anatomia e seu fluxo menstrual, afinal <spam style=" color: #D95F76">o tamanho e formato do disco escolhido depende diretamente do do seu próprio corpo.</spam></p>
+  </div>
+
+
+
+
+
+  <div class="flex-containerI">
+      
+           <div class="PI PItitulo itemI">Para isso:</div>
+           <div class=" PI PIsubtitulo itemI">É preciso saber a altura do seu colo do útero, para entender qual tamanho de disco é mais adequado para você.</div>
+   
+           <div class="Passos list itemI">
+             <ol>
+               <li>Lave bem as mãos;</li>
+               <li>Encontre a melhor posição, o mais recomendado é ficar na vertical;
+               <li>Insira o dedo médio ou indicador dentro do seu canal vaginal e deslize para cima até que possa sentir o seu colo do útero;</li>
+               <li>Agora note o quanto o seu dedo foi inserido. Se tiver inserido a primeira parte do dedo o seu colo é baixo, se inseriu até a segunda parte do dedo seu colo é médio e se inseriu todo o dedo seu colo é alto.</li>
+             </ol>
+           </div>
+
+  </div>
+
+
+
+  <section class="escolha">
+    
+    <div class="escolhaTitulo">Escolha do disco menstrual</div>
+    <div class="escolhaSubTitulo">É necessário levar em conta alguns fatores:</div>
+    <div class="list" style="margin-left:20%; margin-bottom: 5%;">
+      <ul>
+        <li>Idade</li>
+        <li>Se já teve relação sexual</li>
+        <li>Se já teve filho</li>
+        <li>A intensidade do fluxo menstrual.</li>
+        <li>O tamanho e anatomia do canal vaginal</li>
+        <li> A altura do colo do útero
+        (baixa, alta ou média)</li>
+        <li>A sensibilidade individual, exigindo um material mais flexível.</li>
+      </ul>
+    </div>
+
+    <div class="volume">
+       <p class="qntdevolume">Os Dsicos menstruais de maior volume são mais indicados para serem usados nos seguintes casos:</p>
+       <div class="list">
+        <ul>
+          <li>Fluxo menstrual abundante.</li>
+          <li> Nos dias mais intensos de fluxo menstrual.</li>
+          <li>Para serem usados durante a noite.</li>
+          <li> Para pessoas com mais de 30 anos ou que já deram à luz.</li>
+          <li> Para pessoas que precisam permanecer sem esvaziar o disco por mais tempo.</li>
+          <li> Para pessoas de colo alto/médio.</li>
+        </ul>
+     </div>
+    </div>
+
+    <div class="volume">
+      <p class="qntdevolume">Os Discos menstruais de menor volume são mais indicados para serem usados nos seguintes casos:
+      </p>
+      <div class="list">
+        <ul>
+          <li>Fluxo menstrual leve a moderado.</li>
+          <li>Nos dias menos intensos de fluxo menstrual.</li>
+          <li> Para serem usados durante o dia.</li>
+          <li> Para pessoas com menos de 30 anos ou que não deram à luz.</li>
+          <li> Para pessoas de colo baixo/médio.</li>
+        </ul>
+     </div>
+    </div>
+
+    <div class="flex-containerII">
+      <div class="flexibilidadeDisco itemII">Flexibilidade do Disco menstrual reutilizavel</div>
+      
+      <div class="list itemII" style="margin-left: 2%;">
+          <p class="flexibilidadetexto">Existem Dsicos menstruais mais macios e flexíveis e outros mais rígidos. Levando em consideração esses aspecto, a escolha varia de acordo com:</p>
+        <ul>
+          <li>A tonicidade do músculo pélvico.</li>
+          <li>A anatomia do colo do útero.</li>
+          <li>A sensibilidade tátil.
+      </div>
+    </div>
+
+  </section>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- rodapé -->
+    <div class="container-fluid rodape" align="center">
+      <div class="Imagem2">
+  <img src="..\Imagem 2.png" class="rounded" alt="..." style="float:left;width:14vw;">
+</div>
+</div>
+
+    <!--fim do conteúdo-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+
+  </body>
+  
+</html>
